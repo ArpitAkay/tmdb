@@ -20,7 +20,6 @@ const Narbar = () => {
     }
     const language = "en-US";
     const url = `${process.env.NEXT_PUBLIC_TMDB_API_URL}configuration/countries?language=${language}`;
-    console.log(url);
     const res = await fetch(url, {
       method: "GET",
       headers: {
@@ -72,7 +71,7 @@ const Narbar = () => {
               </div>
             )}
           </div>
-          <div>
+          {/* <div>
             <svg
               className="h-8 w-8 text-white"
               viewBox="0 0 24 24"
@@ -93,7 +92,7 @@ const Narbar = () => {
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />{" "}
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
             </svg>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import { Actor, Cast } from "@/types/Movie";
+import { Actor } from "@/types/Movie";
 import Image from "next/image";
 import React from "react";
 
@@ -21,7 +21,7 @@ const CastItem = (props: CastItemProps) => {
             fill
           />
         </div>
-        <div className="text-white pt-4">
+        <div className="text-white pt-4 pe-2">
           <p className="text-sm">
             {`Character Name : ${props.castItem.character}`}
           </p>
