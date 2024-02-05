@@ -10,7 +10,7 @@ interface ReviewItemProps {
 
 const ReviewItem = (props: ReviewItemProps) => {
   return (
-    <Link href={""}>
+    <Link href={props.reviewItem.url}>
       <div className="flex flex-col sm:flex-row sm:justify-between">
         <div className="flex flex-row">
           <div className="mx-2">
